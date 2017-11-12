@@ -10,6 +10,8 @@
 	margin: 0 2rem;
 }
 
+/* Flexbox grid measurements. */
+/* Tried doing 10 but not being able to split 3 ways annoyed me to no end.*/
 .flex-1 {
   flex-basis: 8.33%;
   max-width: 8.33%;
@@ -93,30 +95,50 @@
 }
 
 /* Flexbox parent positioning */
-.flex-center {
+
+.flex-justify-center {
 	justify-content: center;
 }
 
-.flex-start {
+.flex-justify-start {
 	justify-content: flex-start;
 }
 
-.flex-end {
+.flex-justify-end {
 	justify-content: flex-end;
 }
 
-.flex-between {
+.flex-justify-between {
 	justify-content: space-between;
 }
 
-.flex-around {
+.flex-justify-around {
 	justify-content: space-around;
 }
 
+
+/*Parent align part of flexbox*/
 .flex-align-start {
 	align-content: flex-start;
 }
 
+.flex-align-end {
+	align-content: flex-end;
+}
+
+.flex-align-center {
+	align-content: flex-center;
+}
+
+.flex-align-around {
+	align-content: space-around;
+}
+
+.flex-align-between {
+	align-content: space-between;
+}
+
+/*Item align part of flexbox*/
 .item-align-start {
 	align-items: flex-start;
 }
@@ -133,47 +155,58 @@
 	align-items: baseline;
 }
 
-.item-align-stretch {
-	align-items: baseline;
+.flex-s-1 {
+	
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Makes it easier to tell items apart for debugging. */
 .highlight {
-	height: 40px;
-	/*margin: 0.5vw;*/
+	height: 100px;
+	max-height: 50%;
+	border: black solid 2px;
+	border-radius: .22vw;
+	color: white;
+	padding: 2px;
 }
 
-.highlight:nth-of-type(6n+1) {
-	background-color: #222222;
+/*Responsive part*/
+
+@media screen and (max-width: 425px) {
+	
 }
 
-.highlight:nth-of-type(6n+2) {
-	background-color: #E54B4B;
+@media screen and (max-width: 1024px) {
+
 }
 
-.highlight:nth-of-type(6n+3) {
-	background-color: #631D76;
+@media screen and (max-width: 1440px) {
+
 }
-.highlight:nth-of-type(6n+4) {
-	background-color: #00A878;
+
+
+/* This selector is to make sure items nested in other items get selected when debugging. */
+.highlight .flex-row .highlight:nth-of-type(6n+1) {
+	border-color: #222222;
 }
-.highlight:nth-of-type(6n+5) {
-	background-color: #8D6346;
+
+.highlight .flex-row .highlight:nth-of-type(6n+2) {
+	border-color: #E54B4B;
 }
-.highlight:nth-of-type(6n+6) {
-	background-color: #657ED4;
+
+.highlight .flex-row .highlight:nth-of-type(6n+3) {
+	border-color: #631D76;
 }
+
+.highlight .flex-row .highlight:nth-of-type(6n+4) {
+	border-color: #00A878;
+}
+
+.highlight .flex-row .highlight:nth-of-type(6n+5) {
+	border-color: #8D6346;
+}
+
+.highlight .flex-row .highlight:nth-of-type(6n+6) {
+	border-color: #657ED4;
+}
+
