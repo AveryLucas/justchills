@@ -1,0 +1,179 @@
+.flex-container,
+.flex-container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 2rem;
+	/*display: flex;*/
+}
+
+.flex-container {
+	margin: 0 2rem;
+}
+
+.flex-1 {
+  flex-basis: 8.33%;
+  max-width: 8.33%;
+}
+
+.flex-2 {
+  flex-basis: 16.66%;
+  max-width: 16.66%;
+}
+
+.flex-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.flex-4 {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+}
+
+.flex-5 {
+  flex-basis: 41.66%;
+  max-width: 41.66%;
+}
+
+.flex-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.flex-7 {
+  flex-basis: 58.33%;
+  max-width: 58.33%;
+}
+
+.flex-8 {
+  flex-basis: 66.66%;
+  max-width: 66.66%;
+}
+
+.flex-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.flex-10 {
+  flex-basis: 83.33%;
+  max-width: 83.33%;
+}
+
+.flex-11 {
+  flex-basis: 91.66%;
+  max-width: 91.66%;
+}
+
+.flex-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+
+/* Defining flexbox row*/
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-row-reverse {
+	display: flex;
+	flex-flow: row-reverse wrap;
+}
+
+.flex-column {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.flex-column-reverse {
+	display: flex;
+	flex-flow: column-reverse wrap;
+}
+
+/* Flexbox parent positioning */
+.flex-center {
+	justify-content: center;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.flex-around {
+	justify-content: space-around;
+}
+
+.flex-align-start {
+	align-content: flex-start;
+}
+
+.item-align-start {
+	align-items: flex-start;
+}
+
+.item-align-end {
+	align-items: flex-end;
+}
+
+.item-align-center {
+	align-items: center;
+}
+
+.item-align-baseline {
+	align-items: baseline;
+}
+
+.item-align-stretch {
+	align-items: baseline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.highlight {
+	height: 40px;
+	/*margin: 0.5vw;*/
+}
+
+.highlight:nth-of-type(6n+1) {
+	background-color: #222222;
+}
+
+.highlight:nth-of-type(6n+2) {
+	background-color: #E54B4B;
+}
+
+.highlight:nth-of-type(6n+3) {
+	background-color: #631D76;
+}
+.highlight:nth-of-type(6n+4) {
+	background-color: #00A878;
+}
+.highlight:nth-of-type(6n+5) {
+	background-color: #8D6346;
+}
+.highlight:nth-of-type(6n+6) {
+	background-color: #657ED4;
+}
