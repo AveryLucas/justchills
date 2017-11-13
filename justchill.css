@@ -1,336 +1,69 @@
+/*Container stuff*/
+/* --------------------------------------------------- */
 .flex-container,
 .flex-container-fluid
 {
-    /*margin-right: auto;
-    margin-left: auto;
-    padding: 0 2rem;*/
-    /*display: flex;*/
+	margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .flex-container
 {
-    /*margin: 0 2rem;*/
+    padding: 0 15px;
 }
 
-/* Flexbox grid measurements. */
-/* Tried doing 10 but not being able to split 3 ways annoyed me to no end.*/
-
-.flex-phone-1
-{
-    max-width: 8.33%;
-    flex-basis: 8.33%;
+.flex-row .flex-row,
+.flex-row .flex-row-reverse,
+.flex-row .flex-column,
+.flex-row .flex-column-reverse,
+.flex-row-reverse .flex-row,
+.flex-row-reverse .flex-row-reverse,
+.flex-row-reverse .flex-column,
+.flex-row-reverse .flex-column-reverse,
+.flex-column .flex-row,
+.flex-column .flex-row-reverse,
+.flex-column .flex-column,
+.flex-column .flex-column-reverse,
+.flex-column-reverse .flex-row,
+.flex-column-reverse .flex-row-reverse,
+.flex-column-reverse .flex-column,
+.flex-column-reverse .flex-column-reverse {
+	margin: 0;
 }
 
-.flex-phone-2
-{
-    max-width: 16.66%;
-    flex-basis: 16.66%;
+
+/* TURNING FLEXBOX CONTROLS INTO CLASSES */
+/* --------------------------------------------------- *//* --------------------------------------------------- */
+
+/* Defining flexbox display */
+/* --------------------------------------------------- */
+.flex-row, .flex-row-reverse, .flex-column, .flex-column-reverse {
+    display: flex;
+	margin: 0 -15px;
 }
 
-.flex-phone-3
-{
-    max-width: 25%;
-    flex-basis: 25%;
-}
-
-.flex-phone-4
-{
-    max-width: 33.33%;
-    flex-basis: 33.33%;
-}
-
-.flex-phone-5
-{
-    max-width: 41.66%;
-    flex-basis: 41.66%;
-}
-
-.flex-phone-6
-{
-    max-width: 50%;
-    flex-basis: 50%;
-}
-
-.flex-phone-7
-{
-    max-width: 58.33%;
-    flex-basis: 58.33%;
-}
-
-.flex-phone-8
-{
-    max-width: 66.66%;
-    flex-basis: 66.66%;
-}
-
-.flex-phone-9
-{
-    max-width: 75%;
-    flex-basis: 75%;
-}
-
-.flex-phone-10
-{
-    max-width: 83.33%;
-    flex-basis: 83.33%;
-}
-
-.flex-phone-11
-{
-    max-width: 91.66%;
-    flex-basis: 91.66%;
-}
-
-.flex-phone-12
-{
-    max-width: 100%;
-    flex-basis: 100%;
-}
-
-.flex-tablet-1
-{
-    max-width: 8.33%;
-    flex-basis: 8.33%;
-}
-
-.flex-tablet-2
-{
-    max-width: 16.66%;
-    flex-basis: 16.66%;
-}
-
-.flex-tablet-3
-{
-    max-width: 25%;
-    flex-basis: 25%;
-}
-
-.flex-tablet-4
-{
-    max-width: 33.33%;
-    flex-basis: 33.33%;
-}
-
-.flex-tablet-5
-{
-    max-width: 41.66%;
-    flex-basis: 41.66%;
-}
-
-.flex-tablet-6
-{
-    max-width: 50%;
-    flex-basis: 50%;
-}
-
-.flex-tablet-7
-{
-    max-width: 58.33%;
-    flex-basis: 58.33%;
-}
-
-.flex-tablet-8
-{
-    max-width: 66.66%;
-    flex-basis: 66.66%;
-}
-
-.flex-tablet-9
-{
-    max-width: 75%;
-    flex-basis: 75%;
-}
-
-.flex-tablet-10
-{
-    max-width: 83.33%;
-    flex-basis: 83.33%;
-}
-
-.flex-tablet-11
-{
-    max-width: 91.66%;
-    flex-basis: 91.66%;
-}
-
-.flex-tablet-12
-{
-    max-width: 100%;
-    flex-basis: 100%;
-}
-
-.flex-laptop-1
-{
-    max-width: 8.33%;
-    flex-basis: 8.33%;
-}
-
-.flex-laptop-2
-{
-    max-width: 16.66%;
-    flex-basis: 16.66%;
-}
-
-.flex-laptop-3
-{
-    max-width: 25%;
-    flex-basis: 25%;
-}
-
-.flex-laptop-4
-{
-    max-width: 33.33%;
-    flex-basis: 33.33%;
-}
-
-.flex-laptop-5
-{
-    max-width: 41.66%;
-    flex-basis: 41.66%;
-}
-
-.flex-laptop-6
-{
-    max-width: 50%;
-    flex-basis: 50%;
-}
-
-.flex-laptop-7
-{
-    max-width: 58.33%;
-    flex-basis: 58.33%;
-}
-
-.flex-laptop-8
-{
-    max-width: 66.66%;
-    flex-basis: 66.66%;
-}
-
-.flex-laptop-9
-{
-    max-width: 75%;
-    flex-basis: 75%;
-}
-
-.flex-laptop-10
-{
-    max-width: 83.33%;
-    flex-basis: 83.33%;
-}
-
-.flex-laptop-11
-{
-    max-width: 91.66%;
-    flex-basis: 91.66%;
-}
-
-.flex-laptop-12
-{
-    max-width: 100%;
-    flex-basis: 100%;
-}
-
-/*.flex-desktop-1
-{
-    max-width: 8.33%;
-    flex-basis: 8.33%;
-}
-
-.flex-desktop-2
-{
-    max-width: 16.66%;
-    flex-basis: 16.66%;
-}
-
-.flex-desktop-3
-{
-    max-width: 25%;
-    flex-basis: 25%;
-}
-
-.flex-desktop-4
-{
-    max-width: 33.33%;
-    flex-basis: 33.33%;
-}
-
-.flex-desktop-5
-{
-    max-width: 41.66%;
-    flex-basis: 41.66%;
-}
-
-.flex-desktop-6
-{
-    max-width: 50%;
-    flex-basis: 50%;
-}
-
-.flex-desktop-7
-{
-    max-width: 58.33%;
-    flex-basis: 58.33%;
-}
-
-.flex-desktop-8
-{
-    max-width: 66.66%;
-    flex-basis: 66.66%;
-}
-
-.flex-desktop-9
-{
-    max-width: 75%;
-    flex-basis: 75%;
-}
-
-.flex-desktop-10
-{
-    max-width: 83.33%;
-    flex-basis: 83.33%;
-}
-
-.flex-desktop-11
-{
-    max-width: 91.66%;
-    flex-basis: 91.66%;
-}
-
-.flex-desktop-12
-{
-    max-width: 100%;
-    flex-basis: 100%;
-}*/
-
-
-/* Defining flexbox row*/
 .flex-row
 {
-    display: flex;
     flex-flow: row wrap;
 }
 
 .flex-row-reverse
 {
-    display: flex;
     flex-flow: row-reverse wrap;
 }
 
 .flex-column
 {
-    display: flex;
     flex-flow: column wrap;
 }
 
 .flex-column-reverse
 {
-    display: flex;
     flex-flow: column-reverse wrap;
 }
 
 /* Flexbox parent positioning */
-
+/* --------------------------------------------------- */
 .flex-justify-center
 {
     justify-content: center;
@@ -356,8 +89,8 @@
     justify-content: space-around;
 }
 
-
 /*Parent align part of flexbox*/
+/* --------------------------------------------------- */
 .flex-align-start
 {
     align-content: flex-start;
@@ -384,6 +117,7 @@
 }
 
 /*Item align part of flexbox*/
+/* --------------------------------------------------- */
 .item-align-start
 {
     align-items: flex-start;
@@ -404,496 +138,402 @@
     align-items: baseline;
 }
 
-/*.flex-phone-1,
-.flex-phone-2,
-.flex-phone-3,
-.flex-phone-4,
-.flex-phone-5,
-.flex-phone-6,
-.flex-phone-7,
-.flex-phone-8,
-.flex-phone-9,
-.flex-phone-10,
-.flex-phone-11,
-.flex-phone-12
-{
-    padding-right: .5rem;
-    padding-left: .5rem;
+/* Flexbox grid measurements. */
+/* --------------------------------------------------- */
+/* Tried doing 10 but not being able to split 3 ways annoyed me to no end.*/
+.flex-auto {
+	flex: 1;
 }
 
-.flex-desktop-1,
-.flex-desktop-2,
-.flex-desktop-3,
-.flex-desktop-4,
-.flex-desktop-5,
-.flex-desktop-6,
-.flex-desktop-7,
-.flex-desktop-8,
-.flex-desktop-9,
-.flex-desktop-10,
-.flex-desktop-11,
-.flex-desktop-12
+.flex-phone-1, .flex-tablet-1, .flex-laptop-1, .flex-desktop-1
 {
-    padding-right: .7rem;
-    padding-left: .7rem;
+    max-width: 6.17%;
+    flex-basis: 6.17%;
 }
 
-.flex-laptop-1,
-.flex-laptop-2,
-.flex-laptop-3,
-.flex-laptop-4,
-.flex-laptop-5,
-.flex-laptop-6,
-.flex-laptop-7,
-.flex-laptop-8,
-.flex-laptop-9,
-.flex-laptop-10,
-.flex-laptop-11,
-.flex-laptop-12
+.flex-phone-2, .flex-tablet-2, .flex-laptop-2, .flex-desktop-2
 {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    max-width: 14.50%;
+    flex-basis: 14.50%;
 }
 
-.flex-desktop-1,
-.flex-desktop-2,
-.flex-desktop-3,
-.flex-desktop-4,
-.flex-desktop-5,
-.flex-desktop-6,
-.flex-desktop-7,
-.flex-desktop-8,
-.flex-desktop-9,
-.flex-desktop-10,
-.flex-desktop-11,
-.flex-desktop-12
+.flex-phone-3, .flex-tablet-3, .flex-laptop-3, .flex-desktop-3
 {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-*/
-
-/* Makes it easier to tell items apart for debugging. */
-.highlight
-{
-    /*height: 100px;*/
-    /*max-height: 50%;*/
-    /*padding: 2px;*/
-
-    color: white;
-    border: black solid 2px;
-    border-radius: .22vw;
+    max-width: 22.84%;
+    flex-basis: 22.84%;
 }
 
-/*Responsive part*/
-
-/*SUPER desktop SCREENS*/
-/*@media screen and (min-width: 2560px) {
-	body {
-		background-color: green;
-	}
-}*/
-
-/* Extra Large - Desktop */
-@media screen and (min-width: 1440px) and (max-width: 2559px)
+.flex-phone-4, .flex-tablet-4, .flex-laptop-4, .flex-desktop-4
 {
-    /*body
-    {
-        background-color: red;
-    }*/
-
-    .flex-desktop-1
-	{
-	    max-width: 8.33%;
-
-	    flex-basis: 8.33%;
-	}
-
-	.flex-desktop-2
-	{
-	    max-width: 16.66%;
-
-	    flex-basis: 16.66%;
-	}
-
-	.flex-desktop-3
-	{
-	    max-width: 25%;
-
-	    flex-basis: 25%;
-	}
-
-	.flex-desktop-4
-	{
-	    max-width: 33.33%;
-
-	    flex-basis: 33.33%;
-	}
-
-	.flex-desktop-5
-	{
-	    max-width: 41.66%;
-
-	    flex-basis: 41.66%;
-	}
-
-	.flex-desktop-6
-	{
-	    max-width: 50%;
-
-	    flex-basis: 50%;
-	}
-
-	.flex-desktop-7
-	{
-	    max-width: 58.33%;
-
-	    flex-basis: 58.33%;
-	}
-
-	.flex-desktop-8
-	{
-	    max-width: 66.66%;
-
-	    flex-basis: 66.66%;
-	}
-
-	.flex-desktop-9
-	{
-	    max-width: 75%;
-
-	    flex-basis: 75%;
-	}
-
-	.flex-desktop-10
-	{
-	    max-width: 83.33%;
-
-	    flex-basis: 83.33%;
-	}
-
-	.flex-desktop-11
-	{
-	    max-width: 91.66%;
-
-	    flex-basis: 91.66%;
-	}
-
-	.flex-desktop-12
-	{
-	    max-width: 100%;
-
-	    flex-basis: 100%;
-	}
+    max-width: 31.17%;
+    flex-basis: 31.17%;
 }
 
+.flex-phone-5, .flex-tablet-5, .flex-laptop-5, .flex-desktop-5
+{
+    max-width: 39.50%;
+    flex-basis: 39.50%;
+}
+
+.flex-phone-6, .flex-tablet-6, .flex-laptop-6, .flex-desktop-6
+{
+    max-width: 47.84%;
+    flex-basis: 47.84%;
+}
+
+.flex-phone-7, .flex-tablet-7, .flex-laptop-7, .flex-desktop-7
+{
+    max-width: 56.17%;
+    flex-basis: 56.17%;
+}
+
+.flex-phone-8, .flex-tablet-8, .flex-laptop-8, .flex-desktop-8
+{
+    max-width: 64.50%;
+    flex-basis: 64.50%;
+}
+
+.flex-phone-9, .flex-tablet-9, .flex-laptop-9, .flex-desktop-9
+{
+    max-width: 72.84%;
+    flex-basis: 72.84%;
+}
+
+.flex-phone-10, .flex-tablet-10, .flex-laptop-10, .flex-desktop-10
+{
+    max-width: 81.17%;
+    flex-basis: 81.17%;
+}
+
+.flex-phone-11, .flex-tablet-11, .flex-laptop-11, .flex-desktop-11
+{
+    max-width: 89.50%;
+    flex-basis: 89.50%;
+}
+
+.flex-phone-12, .flex-tablet-12, .flex-laptop-12, .flex-desktop-12
+{
+    max-width: 97.84%;
+    flex-basis: 97.84%;
+}
+
+/* Styling everything for the gutter */
+/* --------------------------------------------------- */
+.flex-laptop-1, .flex-laptop-2, .flex-laptop-3, .flex-laptop-4, .flex-laptop-5,
+.flex-laptop-6, .flex-laptop-7, .flex-laptop-8, .flex-laptop-9, .flex-laptop-10,
+.flex-laptop-11, .flex-laptop-12, .flex-tablet-1, .flex-tablet-2, .flex-tablet-3,
+.flex-tablet-4, .flex-tablet-5, .flex-tablet-6, .flex-tablet-7, .flex-tablet-8,
+.flex-tablet-9, .flex-tablet-10, .flex-tablet-11, .flex-tablet-12, .flex-phone-1,
+.flex-phone-2, .flex-phone-3, .flex-phone-4, .flex-phone-5, .flex-phone-6, .flex-phone-7,
+.flex-phone-8, .flex-phone-9, .flex-phone-10, .flex-phone-11, .flex-phone-12 {
+	position: relative;
+    min-height: 1px;
+    padding: 0 1.08%;
+}
+
+
+/* RESPONSIVE PART OF THE GRID */
+/* --------------------------------------------------- *//* --------------------------------------------------- */
+/* Responsive part (Breakpoint Programming) */
+/* --------------------------------------------------- */
 /* Large - Laptops */
-@media screen and (max-width: 1439px)
+@media screen and (min-width: 721px)
 {
-	/*body
-    {
-        background-color: green;
-    }*/
 
     .flex-laptop-1
     {
-        max-width: 8.33%;
+        /*max-width: 6.17%;*/
 
-        flex-basis: 8.33%;
+        flex-basis: 6.17%;
     }
 
     .flex-laptop-2
     {
-        max-width: 16.66%;
+        /*max-width: 14.50%;*/
 
-        flex-basis: 16.66%;
+        flex-basis: 14.50%;
     }
 
     .flex-laptop-3
     {
-        max-width: 25%;
+        /*max-width: 22.84%;*/
 
-        flex-basis: 25%;
+        flex-basis: 22.84%;
     }
 
     .flex-laptop-4
     {
-        max-width: 33.33%;
+        /*max-width: 31.17%;*/
 
-        flex-basis: 33.33%;
+        flex-basis: 31.17%;
     }
 
     .flex-laptop-5
     {
-        max-width: 41.66%;
+        /*max-width: 39.50%;*/
 
-        flex-basis: 41.66%;
+        flex-basis: 39.50%;
     }
 
     .flex-laptop-6
     {
-        max-width: 50%;
+        /*max-width: 47.84%;*/
 
-        flex-basis: 50%;
+        flex-basis: 47.84%;
     }
 
     .flex-laptop-7
     {
-        max-width: 58.33%;
+        /*max-width: 56.17%;*/
 
-        flex-basis: 58.33%;
+        flex-basis: 56.17%;
     }
 
     .flex-laptop-8
     {
-        max-width: 66.66%;
+        /*max-width: 64.50%;*/
 
-        flex-basis: 66.66%;
+        flex-basis: 64.50%;
     }
 
     .flex-laptop-9
     {
-        max-width: 75%;
+        /*max-width: 72.84%;*/
 
-        flex-basis: 75%;
+        flex-basis: 72.84%;
     }
 
     .flex-laptop-10
     {
-        max-width: 83.33%;
+        /*max-width: 81.17%;*/
 
-        flex-basis: 83.33%;
+        flex-basis: 81.17%;
     }
 
     .flex-laptop-11
     {
-        max-width: 91.66%;
+        /*max-width: 89.50%;*/
 
-        flex-basis: 91.66%;
+        flex-basis: 89.50%;
     }
 
     .flex-laptop-12
     {
-        max-width: 100%;
+        /*max-width: 97.84%;*/
 
-        flex-basis: 100%;
+        flex-basis: 97.84%;
     }
 }
 
 /* Medium - Tablet */
 @media screen and (max-width: 720px)
 {
-    /*body
-    {
-        background-color: yellow;
-    }*/
     .flex-tablet-1
 	{
-	    max-width: 8.33%;
+	    max-width: 6.17%;
 
-	    flex-basis: 8.33%;
+	    flex-basis: 6.17%;
 	}
 
 	.flex-tablet-2
 	{
-	    max-width: 16.66%;
+	    max-width: 14.50%;
 
-	    flex-basis: 16.66%;
+	    flex-basis: 14.50%;
 	}
 
 	.flex-tablet-3
 	{
-	    max-width: 25%;
+	    max-width: 22.84%;
 
-	    flex-basis: 25%;
+	    flex-basis: 22.84%;
 	}
 
 	.flex-tablet-4
 	{
-	    max-width: 33.33%;
+	    max-width: 31.17%;
 
-	    flex-basis: 33.33%;
+	    flex-basis: 31.17%;
 	}
 
 	.flex-tablet-5
 	{
-	    max-width: 41.66%;
+	    max-width: 39.50%;
 
-	    flex-basis: 41.66%;
+	    flex-basis: 39.50%;
 	}
 
 	.flex-tablet-6
 	{
-	    max-width: 50%;
+	    max-width: 47.84%;
 
-	    flex-basis: 50%;
+	    flex-basis: 47.84%;
 	}
 
 	.flex-tablet-7
 	{
-	    max-width: 58.33%;
+	    max-width: 56.17%;
 
-	    flex-basis: 58.33%;
+	    flex-basis: 56.17%;
 	}
 
 	.flex-tablet-8
 	{
-	    max-width: 66.66%;
+	    max-width: 64.50%;
 
-	    flex-basis: 66.66%;
+	    flex-basis: 64.50%;
 	}
 
 	.flex-tablet-9
 	{
-	    max-width: 75%;
+	    max-width: 72.84%;
 
-	    flex-basis: 75%;
+	    flex-basis: 72.84%;
 	}
 
 	.flex-tablet-10
 	{
-	    max-width: 83.33%;
+	    max-width: 81.17%;
 
-	    flex-basis: 83.33%;
+	    flex-basis: 81.17%;
 	}
 
 	.flex-tablet-11
 	{
-	    max-width: 91.66%;
+	    max-width: 89.50%;
 
-	    flex-basis: 91.66%;
+	    flex-basis: 89.50%;
 	}
 
 	.flex-tablet-12
 	{
-	    max-width: 100%;
+	    max-width: 97.84%;
 
-	    flex-basis: 100%;
+	    flex-basis: 97.84%;
 	}
 }
 
 /* Small - Mobile Phone */
-@media screen and (max-width: 425px)
+@media screen and (max-width: 422.84px)
 {
-    /*body
-    {
-        background-color: blue;
-    }*/
 
     .flex-phone-1
     {
-        max-width: 8.33%;
-
-        flex-basis: 8.33%;
+        max-width: 6.17%;
+        flex-basis: 6.17%;
     }
 
     .flex-phone-2
     {
-        max-width: 16.66%;
-
-        flex-basis: 16.66%;
+        max-width: 14.50%;
+        flex-basis: 14.50%;
     }
 
     .flex-phone-3
     {
-        max-width: 25%;
-
-        flex-basis: 25%;
+        max-width: 22.84%;
+        flex-basis: 22.84%;
     }
 
     .flex-phone-4
     {
-        max-width: 33.33%;
-
-        flex-basis: 33.33%;
+        max-width: 31.17%;
+        flex-basis: 31.17%;
     }
 
     .flex-phone-5
     {
-        max-width: 41.66%;
-
-        flex-basis: 41.66%;
+        max-width: 39.50%;
+        flex-basis: 39.50%;
     }
 
     .flex-phone-6
     {
-        max-width: 50%;
-
-        flex-basis: 50%;
+        max-width: 47.84%;
+        flex-basis: 47.84%;
     }
 
     .flex-phone-7
     {
-        max-width: 58.33%;
-
-        flex-basis: 58.33%;
+        max-width: 56.17%;
+        flex-basis: 56.17%;
     }
 
     .flex-phone-8
     {
-        max-width: 66.66%;
-
-        flex-basis: 66.66%;
+        max-width: 64.50%;
+        flex-basis: 64.50%;
     }
 
     .flex-phone-9
     {
-        max-width: 75%;
-
-        flex-basis: 75%;
+        max-width: 72.84%;
+        flex-basis: 72.84%;
     }
 
     .flex-phone-10
     {
-        max-width: 83.33%;
-
-        flex-basis: 83.33%;
+        max-width: 81.17%;
+        flex-basis: 81.17%;
     }
 
     .flex-phone-11
     {
-        max-width: 91.66%;
-
-        flex-basis: 91.66%;
+        max-width: 89.50%;
+        flex-basis: 89.50%;
     }
 
     .flex-phone-12
     {
-        max-width: 100%;
-
-        flex-basis: 100%;
+        max-width: 97.84%;
+        flex-basis: 97.84%;
     }
 }
 
 
-
-/* This selector is to make sure items nested in other items get selected when debugging. */
-.highlight .flex-row .highlight:nth-of-type(6n+1)
-{
-    border-color: #222;
+/* Container points for resizing. */
+/* --------------------------------------------------- */
+/* Extra Large - Desktops */
+@media screen and (min-width: 1600px) {
+	.flex-container {
+		max-width: 1360px;
+	}
 }
 
-.highlight .flex-row .highlight:nth-of-type(6n+2)
-{
-    border-color: #e54b4b;
+/* Large - Laptops */
+@media screen and (min-width: 800px) and (max-width: 1599px) {
+	.flex-container {
+		max-width: 1024px;
+	}
 }
 
-.highlight .flex-row .highlight:nth-of-type(6n+3)
-{
-    border-color: #631d76;
+/* Medium - Medium Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.flex-container {
+		max-width: 800px;
+	}
 }
 
-.highlight .flex-row .highlight:nth-of-type(6n+4)
-{
-    border-color: #00a878;
+/* Medium - Smaller Tablet */
+@media screen and (max-width: 767px) {
+	.flex-container {
+		max-width: 640px;
+	}
 }
 
-.highlight .flex-row .highlight:nth-of-type(6n+5)
-{
-    border-color: #8d6346;
+/* Small - Mobile Phone */
+@media screen and (max-width: 479px) {
+	.flex-container {
+		max-width: 90%;
+	}
 }
 
-.highlight .flex-row .highlight:nth-of-type(6n+6)
+
+/* Makes it easier to tell items apart for debugging. */
+/* --------------------------------------------------- */
+.highlight
 {
-    border-color: #657ed4;
+    height: 35px;
+    font-size: 12px;
+    outline: 1px solid red;
 }
