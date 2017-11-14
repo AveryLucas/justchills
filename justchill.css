@@ -1,14 +1,13 @@
+/* --------------------------------------------------- *//* --------------------------------------------------- */
+/* FLEXBOX RESPONSIVNESS SECTION */
+/* --------------------------------------------------- *//* --------------------------------------------------- */
+
 /*Container stuff*/
 /* --------------------------------------------------- */
 .flex-container,
 .flex-container-fluid
 {
 	margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.flex-container
-{
     padding: 0 15px;
 }
 
@@ -243,84 +242,72 @@
     .flex-laptop-1
     {
         /*max-width: 6.17%;*/
-
         flex-basis: 6.17%;
     }
 
     .flex-laptop-2
     {
         /*max-width: 14.50%;*/
-
         flex-basis: 14.50%;
     }
 
     .flex-laptop-3
     {
         /*max-width: 22.84%;*/
-
         flex-basis: 22.84%;
     }
 
     .flex-laptop-4
     {
         /*max-width: 31.17%;*/
-
         flex-basis: 31.17%;
     }
 
     .flex-laptop-5
     {
         /*max-width: 39.50%;*/
-
         flex-basis: 39.50%;
     }
 
     .flex-laptop-6
     {
         /*max-width: 47.84%;*/
-
         flex-basis: 47.84%;
     }
 
     .flex-laptop-7
     {
         /*max-width: 56.17%;*/
-
         flex-basis: 56.17%;
     }
 
     .flex-laptop-8
     {
         /*max-width: 64.50%;*/
-
         flex-basis: 64.50%;
     }
 
     .flex-laptop-9
     {
         /*max-width: 72.84%;*/
-
         flex-basis: 72.84%;
     }
 
     .flex-laptop-10
     {
         /*max-width: 81.17%;*/
-
         flex-basis: 81.17%;
     }
 
     .flex-laptop-11
     {
         /*max-width: 89.50%;*/
-
         flex-basis: 89.50%;
     }
 
     .flex-laptop-12
     {
         /*max-width: 97.84%;*/
-
         flex-basis: 97.84%;
     }
 }
@@ -331,84 +318,72 @@
     .flex-tablet-1
 	{
 	    max-width: 6.17%;
-
 	    flex-basis: 6.17%;
 	}
 
 	.flex-tablet-2
 	{
 	    max-width: 14.50%;
-
 	    flex-basis: 14.50%;
 	}
 
 	.flex-tablet-3
 	{
 	    max-width: 22.84%;
-
 	    flex-basis: 22.84%;
 	}
 
 	.flex-tablet-4
 	{
 	    max-width: 31.17%;
-
 	    flex-basis: 31.17%;
 	}
 
 	.flex-tablet-5
 	{
 	    max-width: 39.50%;
-
 	    flex-basis: 39.50%;
 	}
 
 	.flex-tablet-6
 	{
 	    max-width: 47.84%;
-
 	    flex-basis: 47.84%;
 	}
 
 	.flex-tablet-7
 	{
 	    max-width: 56.17%;
-
 	    flex-basis: 56.17%;
 	}
 
 	.flex-tablet-8
 	{
 	    max-width: 64.50%;
-
 	    flex-basis: 64.50%;
 	}
 
 	.flex-tablet-9
 	{
 	    max-width: 72.84%;
-
 	    flex-basis: 72.84%;
 	}
 
 	.flex-tablet-10
 	{
 	    max-width: 81.17%;
-
 	    flex-basis: 81.17%;
 	}
 
 	.flex-tablet-11
 	{
 	    max-width: 89.50%;
-
 	    flex-basis: 89.50%;
 	}
 
 	.flex-tablet-12
 	{
 	    max-width: 97.84%;
-
 	    flex-basis: 97.84%;
 	}
 }
@@ -533,7 +508,12 @@
 /* --------------------------------------------------- */
 .highlight
 {
-    height: 35px;
+    min-height: 35px;
     font-size: 12px;
-    outline: 1px solid red;
+    outline: 2px solid #a1a1a1;
 }
+
+
+/* --------------------------------------------------- *//* --------------------------------------------------- */
+/* FLEXBOX NAV SECTION */
+/* --------------------------------------------------- *//* --------------------------------------------------- */
