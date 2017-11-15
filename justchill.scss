@@ -1,0 +1,422 @@
+$offset: 1.08%;
+$one: 6.17%;
+$two: 14.50%;
+$three: 22.84%;
+$four: 31.17%;
+$five: 31.17%;
+$six: 47.84%;
+$seven: 56.17%;
+$eight: 64.50%;
+$nine: 72.84%;
+$ten: 81.17%;
+$eleven: 89.50%;
+$twelve: 97.84%;
+
+.container {
+    padding: 0 15px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+	  margin: 0 -15;
+	  
+	      
+    .flex {
+      margin: 0;
+    }
+	  
+    &.column {
+      flex-flow: column wrap;
+      &.reverse {
+        flex-flow: column-reverse wrap;
+      }
+    }
+    
+    &.reverse:not(.column) {
+      flex-flow: row-reverse wrap;
+    }
+    
+    &.justify-center {justify-content: center;}
+    &.justify-start {justify-content: center;}
+    &.justify-end {justify-content: center;}
+    &.justify-between {justify-content: center;}
+    &.justify-around {justify-content: center;}
+    
+    &.align-center {align-content: center;}
+    &.align-start {align-content: center;}
+    &.align-end {align-content: center;}
+    &.align-between {align-content: center;}
+    &.align-around {align-content: center;}
+    
+    .align-center {align-content: center;}
+    .align-start {align-content: center;}
+    .align-end {align-content: center;}
+    .align-between {align-content: center;}
+    .align-around {align-content: center;}
+    
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+      position: relative;
+      min-height: 1px;
+      padding: 0 $offset;
+    }
+    .one {
+      max-width: $one;
+      flex-basis: $one;
+    }
+    
+    .two {
+      max-width: $two;
+      flex-basis: $two;
+    }
+    
+    .three {
+      max-width: $three;
+      flex-basis: $three;
+    }
+    
+    .four {
+      max-width: $four;
+      flex-basis: $four;
+    }
+    
+    .five {
+      max-width: $five;
+      flex-basis: $five;
+    }
+    
+    .six {
+      max-width: $six;
+      flex-basis: $six;
+    }
+    
+    .seven {
+      max-width: $seven;
+      flex-basis: $seven;
+    }
+    
+    .eight {
+      max-width: $eight;
+      flex-basis: $eight;
+    }
+    
+    .nine {
+      max-width: $nine;
+      flex-basis: $nine;
+    }
+    
+    .ten {
+      max-width: $ten;
+      flex-basis: $ten;
+    }
+    
+    .eleven {
+      max-width: $eleven;
+      flex-basis: $eleven;
+    }
+    
+    .twelve {
+      max-width: $twelve;
+      flex-basis: $twelve;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .desktop-1
+    {
+        max-width: $one;
+        flex-basis: $one;
+    }
+
+    .desktop-2
+    {
+        max-width: $two;
+        flex-basis: $two;
+    }
+
+    .desktop-3
+    {
+        max-width: $three;
+        flex-basis: $three;
+    }
+
+    .desktop-4
+    {
+        max-width: $four;
+        flex-basis: $four;
+    }
+
+    .desktop-5
+    {
+        max-width: $five;
+        flex-basis: $five;
+    }
+
+    .desktop-6
+    {
+        max-width: $six;
+        flex-basis: $six;
+    }
+
+    .desktop-7
+    {
+        max-width: $seven;
+        flex-basis: $seven;
+    }
+
+    .desktop-8
+    {
+        max-width: $eight;
+        flex-basis: $eight;
+    }
+
+    .desktop-9
+    {
+        max-width: $nine;
+        flex-basis: $nine;
+    }
+
+    .desktop-10
+    {
+        max-width: $ten;
+        flex-basis: $ten;
+    }
+
+    .desktop-11
+    {
+        max-width: $eleven;
+        flex-basis: $eleven;
+    }
+
+    .desktop-12
+    {
+        max-width: $twelve;
+        flex-basis: $twelve;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .laptop-1
+    {
+        max-width: $one;
+        flex-basis: $one;
+    }
+
+    .laptop-2
+    {
+        max-width: $two;
+        flex-basis: $two;
+    }
+
+    .laptop-3
+    {
+        max-width: $three;
+        flex-basis: $three;
+    }
+
+    .laptop-4
+    {
+        max-width: $four;
+        flex-basis: $four;
+    }
+
+    .laptop-5
+    {
+        max-width: $five;
+        flex-basis: $five;
+    }
+
+    .laptop-6
+    {
+        max-width: $six;
+        flex-basis: $six;
+    }
+
+    .laptop-7
+    {
+        max-width: $seven;
+        flex-basis: $seven;
+    }
+
+    .laptop-8
+    {
+        max-width: $eight;
+        flex-basis: $eight;
+    }
+
+    .laptop-9
+    {
+        max-width: $nine;
+        flex-basis: $nine;
+    }
+
+    .laptop-10
+    {
+        max-width: $ten;
+        flex-basis: $ten;
+    }
+
+    .laptop-11
+    {
+        max-width: $eleven;
+        flex-basis: $eleven;
+    }
+
+    .laptop-12
+    {
+        max-width: $twelve;
+        flex-basis: $twelve;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    .tablet-1
+	{
+	    max-width: $one;
+	    flex-basis: $one;
+	}
+
+	.tablet-2
+	{
+	    max-width: $two;
+	    flex-basis: $two;
+	}
+
+	.tablet-3
+	{
+	    max-width: $three;
+	    flex-basis: $three;
+	}
+
+	.tablet-4
+	{
+	    max-width: $four;
+	    flex-basis: $four;
+	}
+
+	.tablet-5
+	{
+	    max-width: $five;
+	    flex-basis: $five;
+	}
+
+	.tablet-6
+	{
+	    max-width: $six;
+	    flex-basis: $six;
+	}
+
+	.tablet-7
+	{
+	    max-width: $seven;
+	    flex-basis: $seven;
+	}
+
+	.tablet-8
+	{
+	    max-width: $seven;
+	    flex-basis: $seven;
+	}
+
+	.tablet-9
+	{
+	    max-width: $nine;
+	    flex-basis: $nine;
+	}
+
+	.tablet-10
+	{
+	    max-width: $ten;
+	    flex-basis: $ten;
+	}
+
+	.tablet-11
+	{
+	    max-width: $eleven;
+	    flex-basis: $eleven;
+	}
+
+	.tablet-12
+	{
+	    max-width: $twelve;
+	    flex-basis: $twelve;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+    .phone-1
+    {
+        max-width: $one;
+        flex-basis: $one;
+    }
+
+    .phone-2
+    {
+        max-width: $two;
+        flex-basis: $two;
+    }
+
+    .phone-3
+    {
+        max-width: $three;
+        flex-basis: $three;
+    }
+
+    .phone-4
+    {
+        max-width: $four;
+        flex-basis: $four;
+    }
+
+    .phone-5
+    {
+        max-width: $five;
+        flex-basis: $five;
+    }
+
+    .phone-6
+    {
+        max-width: $six;
+        flex-basis: $six;
+    }
+
+    .phone-7
+    {
+        max-width: $seven;
+        flex-basis: $seven;
+    }
+
+    .phone-8
+    {
+        max-width: $seven;
+        flex-basis: $seven;
+    }
+
+    .phone-9
+    {
+        max-width: $nine;
+        flex-basis: $nine;
+    }
+
+    .phone-10
+    {
+        max-width: $ten;
+        flex-basis: $ten;
+    }
+
+    .phone-11
+    {
+        max-width: $eleven;
+        flex-basis: $eleven;
+    }
+
+    .phone-12
+    {
+        max-width: $twelve;
+        flex-basis: $twelve;
+    }
+}

@@ -1,519 +1,364 @@
-/* --------------------------------------------------- *//* --------------------------------------------------- */
-/* FLEXBOX RESPONSIVNESS SECTION */
-/* --------------------------------------------------- *//* --------------------------------------------------- */
-
-/*Container stuff*/
-/* --------------------------------------------------- */
-.flex-container,
-.flex-container-fluid
-{
-	margin: 0 auto;
-    padding: 0 15px;
+.container {
+  padding: 0 15px;
 }
 
-.flex-row .flex-row,
-.flex-row .flex-row-reverse,
-.flex-row .flex-column,
-.flex-row .flex-column-reverse,
-.flex-row-reverse .flex-row,
-.flex-row-reverse .flex-row-reverse,
-.flex-row-reverse .flex-column,
-.flex-row-reverse .flex-column-reverse,
-.flex-column .flex-row,
-.flex-column .flex-row-reverse,
-.flex-column .flex-column,
-.flex-column .flex-column-reverse,
-.flex-column-reverse .flex-row,
-.flex-column-reverse .flex-row-reverse,
-.flex-column-reverse .flex-column,
-.flex-column-reverse .flex-column-reverse {
-	margin: 0;
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -15;
+}
+.flex .flex {
+  margin: 0;
+}
+.flex.column {
+  flex-flow: column wrap;
+}
+.flex.column.reverse {
+  flex-flow: column-reverse wrap;
+}
+.flex.reverse:not(.column) {
+  flex-flow: row-reverse wrap;
+}
+.flex.justify-center {
+  justify-content: center;
+}
+.flex.justify-start {
+  justify-content: center;
+}
+.flex.justify-end {
+  justify-content: center;
+}
+.flex.justify-between {
+  justify-content: center;
+}
+.flex.justify-around {
+  justify-content: center;
+}
+.flex.align-center {
+  align-content: center;
+}
+.flex.align-start {
+  align-content: center;
+}
+.flex.align-end {
+  align-content: center;
+}
+.flex.align-between {
+  align-content: center;
+}
+.flex.align-around {
+  align-content: center;
+}
+.flex .align-center {
+  align-content: center;
+}
+.flex .align-start {
+  align-content: center;
+}
+.flex .align-end {
+  align-content: center;
+}
+.flex .align-between {
+  align-content: center;
+}
+.flex .align-around {
+  align-content: center;
+}
+.flex .one, .flex .two, .flex .three, .flex .four, .flex .five, .flex .six, .flex .seven, .flex .eight, .flex .nine, .flex .ten, .flex .eleven, .flex .twelve {
+  position: relative;
+  min-height: 1px;
+  padding: 0 1.08%;
+}
+.flex .one {
+  max-width: 6.17%;
+  flex-basis: 6.17%;
+}
+.flex .two {
+  max-width: 14.5%;
+  flex-basis: 14.5%;
+}
+.flex .three {
+  max-width: 22.84%;
+  flex-basis: 22.84%;
+}
+.flex .four {
+  max-width: 31.17%;
+  flex-basis: 31.17%;
+}
+.flex .five {
+  max-width: 31.17%;
+  flex-basis: 31.17%;
+}
+.flex .six {
+  max-width: 47.84%;
+  flex-basis: 47.84%;
+}
+.flex .seven {
+  max-width: 56.17%;
+  flex-basis: 56.17%;
+}
+.flex .eight {
+  max-width: 64.5%;
+  flex-basis: 64.5%;
+}
+.flex .nine {
+  max-width: 72.84%;
+  flex-basis: 72.84%;
+}
+.flex .ten {
+  max-width: 81.17%;
+  flex-basis: 81.17%;
+}
+.flex .eleven {
+  max-width: 89.5%;
+  flex-basis: 89.5%;
+}
+.flex .twelve {
+  max-width: 97.84%;
+  flex-basis: 97.84%;
 }
 
-
-/* TURNING FLEXBOX CONTROLS INTO CLASSES */
-/* --------------------------------------------------- *//* --------------------------------------------------- */
-
-/* Defining flexbox display */
-/* --------------------------------------------------- */
-.flex-row, .flex-row-reverse, .flex-column, .flex-column-reverse {
-    display: flex;
-	margin: 0 -15px;
-}
-
-.flex-row
-{
-    flex-flow: row wrap;
-}
-
-.flex-row-reverse
-{
-    flex-flow: row-reverse wrap;
-}
-
-.flex-column
-{
-    flex-flow: column wrap;
-}
-
-.flex-column-reverse
-{
-    flex-flow: column-reverse wrap;
-}
-
-/* Flexbox parent positioning */
-/* --------------------------------------------------- */
-.flex-justify-center
-{
-    justify-content: center;
-}
-
-.flex-justify-start
-{
-    justify-content: flex-start;
-}
-
-.flex-justify-end
-{
-    justify-content: flex-end;
-}
-
-.flex-justify-between
-{
-    justify-content: space-between;
-}
-
-.flex-justify-around
-{
-    justify-content: space-around;
-}
-
-/*Parent align part of flexbox*/
-/* --------------------------------------------------- */
-.flex-align-start
-{
-    align-content: flex-start;
-}
-
-.flex-align-end
-{
-    align-content: flex-end;
-}
-
-.flex-align-center
-{
-    align-content: flex-center;
-}
-
-.flex-align-around
-{
-    align-content: space-around;
-}
-
-.flex-align-between
-{
-    align-content: space-between;
-}
-
-/*Item align part of flexbox*/
-/* --------------------------------------------------- */
-.item-align-start
-{
-    align-items: flex-start;
-}
-
-.item-align-end
-{
-    align-items: flex-end;
-}
-
-.item-align-center
-{
-    align-items: center;
-}
-
-.item-align-baseline
-{
-    align-items: baseline;
-}
-
-/* Flexbox grid measurements. */
-/* --------------------------------------------------- */
-/* Tried doing 10 but not being able to split 3 ways annoyed me to no end.*/
-.flex-auto {
-	flex: 1;
-}
-
-.flex-phone-1, .flex-tablet-1, .flex-laptop-1, .flex-desktop-1
-{
+@media only screen and (min-width: 1200px) {
+  .desktop-1 {
     max-width: 6.17%;
     flex-basis: 6.17%;
-}
+  }
 
-.flex-phone-2, .flex-tablet-2, .flex-laptop-2, .flex-desktop-2
-{
-    max-width: 14.50%;
-    flex-basis: 14.50%;
-}
+  .desktop-2 {
+    max-width: 14.5%;
+    flex-basis: 14.5%;
+  }
 
-.flex-phone-3, .flex-tablet-3, .flex-laptop-3, .flex-desktop-3
-{
+  .desktop-3 {
     max-width: 22.84%;
     flex-basis: 22.84%;
-}
+  }
 
-.flex-phone-4, .flex-tablet-4, .flex-laptop-4, .flex-desktop-4
-{
+  .desktop-4 {
     max-width: 31.17%;
     flex-basis: 31.17%;
-}
+  }
 
-.flex-phone-5, .flex-tablet-5, .flex-laptop-5, .flex-desktop-5
-{
-    max-width: 39.50%;
-    flex-basis: 39.50%;
-}
+  .desktop-5 {
+    max-width: 31.17%;
+    flex-basis: 31.17%;
+  }
 
-.flex-phone-6, .flex-tablet-6, .flex-laptop-6, .flex-desktop-6
-{
+  .desktop-6 {
     max-width: 47.84%;
     flex-basis: 47.84%;
-}
+  }
 
-.flex-phone-7, .flex-tablet-7, .flex-laptop-7, .flex-desktop-7
-{
+  .desktop-7 {
     max-width: 56.17%;
     flex-basis: 56.17%;
-}
+  }
 
-.flex-phone-8, .flex-tablet-8, .flex-laptop-8, .flex-desktop-8
-{
-    max-width: 64.50%;
-    flex-basis: 64.50%;
-}
+  .desktop-8 {
+    max-width: 64.5%;
+    flex-basis: 64.5%;
+  }
 
-.flex-phone-9, .flex-tablet-9, .flex-laptop-9, .flex-desktop-9
-{
+  .desktop-9 {
     max-width: 72.84%;
     flex-basis: 72.84%;
-}
+  }
 
-.flex-phone-10, .flex-tablet-10, .flex-laptop-10, .flex-desktop-10
-{
+  .desktop-10 {
     max-width: 81.17%;
     flex-basis: 81.17%;
-}
+  }
 
-.flex-phone-11, .flex-tablet-11, .flex-laptop-11, .flex-desktop-11
-{
-    max-width: 89.50%;
-    flex-basis: 89.50%;
-}
+  .desktop-11 {
+    max-width: 89.5%;
+    flex-basis: 89.5%;
+  }
 
-.flex-phone-12, .flex-tablet-12, .flex-laptop-12, .flex-desktop-12
-{
+  .desktop-12 {
     max-width: 97.84%;
     flex-basis: 97.84%;
+  }
 }
+@media only screen and (min-width: 992px) {
+  .laptop-1 {
+    max-width: 6.17%;
+    flex-basis: 6.17%;
+  }
 
-/* Styling everything for the gutter */
-/* --------------------------------------------------- */
-.flex-laptop-1, .flex-laptop-2, .flex-laptop-3, .flex-laptop-4, .flex-laptop-5,
-.flex-laptop-6, .flex-laptop-7, .flex-laptop-8, .flex-laptop-9, .flex-laptop-10,
-.flex-laptop-11, .flex-laptop-12, .flex-tablet-1, .flex-tablet-2, .flex-tablet-3,
-.flex-tablet-4, .flex-tablet-5, .flex-tablet-6, .flex-tablet-7, .flex-tablet-8,
-.flex-tablet-9, .flex-tablet-10, .flex-tablet-11, .flex-tablet-12, .flex-phone-1,
-.flex-phone-2, .flex-phone-3, .flex-phone-4, .flex-phone-5, .flex-phone-6, .flex-phone-7,
-.flex-phone-8, .flex-phone-9, .flex-phone-10, .flex-phone-11, .flex-phone-12 {
-	position: relative;
-    min-height: 1px;
-    padding: 0 1.08%;
+  .laptop-2 {
+    max-width: 14.5%;
+    flex-basis: 14.5%;
+  }
+
+  .laptop-3 {
+    max-width: 22.84%;
+    flex-basis: 22.84%;
+  }
+
+  .laptop-4 {
+    max-width: 31.17%;
+    flex-basis: 31.17%;
+  }
+
+  .laptop-5 {
+    max-width: 31.17%;
+    flex-basis: 31.17%;
+  }
+
+  .laptop-6 {
+    max-width: 47.84%;
+    flex-basis: 47.84%;
+  }
+
+  .laptop-7 {
+    max-width: 56.17%;
+    flex-basis: 56.17%;
+  }
+
+  .laptop-8 {
+    max-width: 64.5%;
+    flex-basis: 64.5%;
+  }
+
+  .laptop-9 {
+    max-width: 72.84%;
+    flex-basis: 72.84%;
+  }
+
+  .laptop-10 {
+    max-width: 81.17%;
+    flex-basis: 81.17%;
+  }
+
+  .laptop-11 {
+    max-width: 89.5%;
+    flex-basis: 89.5%;
+  }
+
+  .laptop-12 {
+    max-width: 97.84%;
+    flex-basis: 97.84%;
+  }
 }
+@media only screen and (min-width: 768px) {
+  .tablet-1 {
+    max-width: 6.17%;
+    flex-basis: 6.17%;
+  }
 
+  .tablet-2 {
+    max-width: 14.5%;
+    flex-basis: 14.5%;
+  }
 
-/* RESPONSIVE PART OF THE GRID */
-/* --------------------------------------------------- *//* --------------------------------------------------- */
-/* Responsive part (Breakpoint Programming) */
-/* --------------------------------------------------- */
-/* Large - Laptops */
-@media screen and (min-width: 721px)
-{
+  .tablet-3 {
+    max-width: 22.84%;
+    flex-basis: 22.84%;
+  }
 
-    .flex-laptop-1
-    {
-        /*max-width: 6.17%;*/
-        flex-basis: 6.17%;
-    }
+  .tablet-4 {
+    max-width: 31.17%;
+    flex-basis: 31.17%;
+  }
 
-    .flex-laptop-2
-    {
-        /*max-width: 14.50%;*/
-        flex-basis: 14.50%;
-    }
+  .tablet-5 {
+    max-width: 31.17%;
+    flex-basis: 31.17%;
+  }
 
-    .flex-laptop-3
-    {
-        /*max-width: 22.84%;*/
-        flex-basis: 22.84%;
-    }
+  .tablet-6 {
+    max-width: 47.84%;
+    flex-basis: 47.84%;
+  }
 
-    .flex-laptop-4
-    {
-        /*max-width: 31.17%;*/
-        flex-basis: 31.17%;
-    }
+  .tablet-7 {
+    max-width: 56.17%;
+    flex-basis: 56.17%;
+  }
 
-    .flex-laptop-5
-    {
-        /*max-width: 39.50%;*/
-        flex-basis: 39.50%;
-    }
+  .tablet-8 {
+    max-width: 56.17%;
+    flex-basis: 56.17%;
+  }
 
-    .flex-laptop-6
-    {
-        /*max-width: 47.84%;*/
-        flex-basis: 47.84%;
-    }
+  .tablet-9 {
+    max-width: 72.84%;
+    flex-basis: 72.84%;
+  }
 
-    .flex-laptop-7
-    {
-        /*max-width: 56.17%;*/
-        flex-basis: 56.17%;
-    }
+  .tablet-10 {
+    max-width: 81.17%;
+    flex-basis: 81.17%;
+  }
 
-    .flex-laptop-8
-    {
-        /*max-width: 64.50%;*/
-        flex-basis: 64.50%;
-    }
+  .tablet-11 {
+    max-width: 89.5%;
+    flex-basis: 89.5%;
+  }
 
-    .flex-laptop-9
-    {
-        /*max-width: 72.84%;*/
-        flex-basis: 72.84%;
-    }
-
-    .flex-laptop-10
-    {
-        /*max-width: 81.17%;*/
-        flex-basis: 81.17%;
-    }
-
-    .flex-laptop-11
-    {
-        /*max-width: 89.50%;*/
-        flex-basis: 89.50%;
-    }
-
-    .flex-laptop-12
-    {
-        /*max-width: 97.84%;*/
-        flex-basis: 97.84%;
-    }
+  .tablet-12 {
+    max-width: 97.84%;
+    flex-basis: 97.84%;
+  }
 }
+@media only screen and (max-width: 480px) {
+  .phone-1 {
+    max-width: 6.17%;
+    flex-basis: 6.17%;
+  }
 
-/* Medium - Tablet */
-@media screen and (max-width: 720px)
-{
-    .flex-tablet-1
-	{
-	    max-width: 6.17%;
-	    flex-basis: 6.17%;
-	}
+  .phone-2 {
+    max-width: 14.5%;
+    flex-basis: 14.5%;
+  }
 
-	.flex-tablet-2
-	{
-	    max-width: 14.50%;
-	    flex-basis: 14.50%;
-	}
+  .phone-3 {
+    max-width: 22.84%;
+    flex-basis: 22.84%;
+  }
 
-	.flex-tablet-3
-	{
-	    max-width: 22.84%;
-	    flex-basis: 22.84%;
-	}
+  .phone-4 {
+    max-width: 31.17%;
+    flex-basis: 31.17%;
+  }
 
-	.flex-tablet-4
-	{
-	    max-width: 31.17%;
-	    flex-basis: 31.17%;
-	}
+  .phone-5 {
+    max-width: 31.17%;
+    flex-basis: 31.17%;
+  }
 
-	.flex-tablet-5
-	{
-	    max-width: 39.50%;
-	    flex-basis: 39.50%;
-	}
+  .phone-6 {
+    max-width: 47.84%;
+    flex-basis: 47.84%;
+  }
 
-	.flex-tablet-6
-	{
-	    max-width: 47.84%;
-	    flex-basis: 47.84%;
-	}
+  .phone-7 {
+    max-width: 56.17%;
+    flex-basis: 56.17%;
+  }
 
-	.flex-tablet-7
-	{
-	    max-width: 56.17%;
-	    flex-basis: 56.17%;
-	}
+  .phone-8 {
+    max-width: 56.17%;
+    flex-basis: 56.17%;
+  }
 
-	.flex-tablet-8
-	{
-	    max-width: 64.50%;
-	    flex-basis: 64.50%;
-	}
+  .phone-9 {
+    max-width: 72.84%;
+    flex-basis: 72.84%;
+  }
 
-	.flex-tablet-9
-	{
-	    max-width: 72.84%;
-	    flex-basis: 72.84%;
-	}
+  .phone-10 {
+    max-width: 81.17%;
+    flex-basis: 81.17%;
+  }
 
-	.flex-tablet-10
-	{
-	    max-width: 81.17%;
-	    flex-basis: 81.17%;
-	}
+  .phone-11 {
+    max-width: 89.5%;
+    flex-basis: 89.5%;
+  }
 
-	.flex-tablet-11
-	{
-	    max-width: 89.50%;
-	    flex-basis: 89.50%;
-	}
-
-	.flex-tablet-12
-	{
-	    max-width: 97.84%;
-	    flex-basis: 97.84%;
-	}
+  .phone-12 {
+    max-width: 97.84%;
+    flex-basis: 97.84%;
+  }
 }
-
-/* Small - Mobile Phone */
-@media screen and (max-width: 422.84px)
-{
-
-    .flex-phone-1
-    {
-        max-width: 6.17%;
-        flex-basis: 6.17%;
-    }
-
-    .flex-phone-2
-    {
-        max-width: 14.50%;
-        flex-basis: 14.50%;
-    }
-
-    .flex-phone-3
-    {
-        max-width: 22.84%;
-        flex-basis: 22.84%;
-    }
-
-    .flex-phone-4
-    {
-        max-width: 31.17%;
-        flex-basis: 31.17%;
-    }
-
-    .flex-phone-5
-    {
-        max-width: 39.50%;
-        flex-basis: 39.50%;
-    }
-
-    .flex-phone-6
-    {
-        max-width: 47.84%;
-        flex-basis: 47.84%;
-    }
-
-    .flex-phone-7
-    {
-        max-width: 56.17%;
-        flex-basis: 56.17%;
-    }
-
-    .flex-phone-8
-    {
-        max-width: 64.50%;
-        flex-basis: 64.50%;
-    }
-
-    .flex-phone-9
-    {
-        max-width: 72.84%;
-        flex-basis: 72.84%;
-    }
-
-    .flex-phone-10
-    {
-        max-width: 81.17%;
-        flex-basis: 81.17%;
-    }
-
-    .flex-phone-11
-    {
-        max-width: 89.50%;
-        flex-basis: 89.50%;
-    }
-
-    .flex-phone-12
-    {
-        max-width: 97.84%;
-        flex-basis: 97.84%;
-    }
-}
-
-
-/* Container points for resizing. */
-/* --------------------------------------------------- */
-/* Extra Large - Desktops */
-@media screen and (min-width: 1600px) {
-	.flex-container {
-		max-width: 1360px;
-	}
-}
-
-/* Large - Laptops */
-@media screen and (min-width: 800px) and (max-width: 1599px) {
-	.flex-container {
-		max-width: 1024px;
-	}
-}
-
-/* Medium - Medium Tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	.flex-container {
-		max-width: 800px;
-	}
-}
-
-/* Medium - Smaller Tablet */
-@media screen and (max-width: 767px) {
-	.flex-container {
-		max-width: 640px;
-	}
-}
-
-/* Small - Mobile Phone */
-@media screen and (max-width: 479px) {
-	.flex-container {
-		max-width: 90%;
-	}
-}
-
-
-/* Makes it easier to tell items apart for debugging. */
-/* --------------------------------------------------- */
-.highlight
-{
-    min-height: 35px;
-    font-size: 12px;
-    outline: 2px solid #a1a1a1;
-}
-
-
-/* --------------------------------------------------- *//* --------------------------------------------------- */
-/* FLEXBOX NAV SECTION */
-/* --------------------------------------------------- *//* --------------------------------------------------- */
